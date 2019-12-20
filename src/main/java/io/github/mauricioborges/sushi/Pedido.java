@@ -12,10 +12,6 @@ public class Pedido implements Iterable<CoisaDoCardapio>{
         listaDeCoisasNoPedido.add(umaCoisaDoCardapio);
     }
 
-    public Boolean soTemUmItem() {
-        return listaDeCoisasNoPedido.size() == 1;
-    }
-
     @Override
     public Iterator iterator() {
         return listaDeCoisasNoPedido.iterator();

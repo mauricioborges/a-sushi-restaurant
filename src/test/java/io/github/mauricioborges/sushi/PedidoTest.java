@@ -19,7 +19,6 @@ public class PedidoTest {
         Pedido pedido = caixa.tiraOPedido(umaCoisaDoCardapio);
     // THEN
         assertThat(pedido, contains(umaCoisaDoCardapio));
-        assertThat(pedido.soTemUmItem(), is(true));
     }
 
     @Test
