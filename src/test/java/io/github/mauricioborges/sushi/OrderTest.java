@@ -1,14 +1,16 @@
 package io.github.mauricioborges.sushi;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class OrderTest {
 
     @Test
-    void takeOrderOfOneItemAtRestaurantCasher() {
+    void takeOrderOfOneItemAtRestaurantCashier() {
     // GIVEN
         Restaurant restaurant = new Restaurant();
         MenuThings menuThing = new MenuThings();
@@ -19,9 +21,10 @@ public class OrderTest {
         assertThat(order, contains(menuThing));
     }
 
+    @Disabled("this is more like a Functional/Integration test and will not pass for now")
     @Test
-    void makeOrder() {
-//        fail();
+    void clientOrderOneThing() {
+        fail();
 
 //        Cliente cliente;
         Restaurant restaurant;

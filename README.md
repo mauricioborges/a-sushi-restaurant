@@ -6,11 +6,15 @@ I've added gitignore from github repository for IDEA with: ``curl https://raw.gi
 
 ## Context:
 
-A really tiny sushi restaurant. You order and pay at the same time. Then they handle your paid order to the sushi chefs through a standard restaurant order system. Due to obvious regulations you have a limit of 35 people inside the building. If it's raining they have way less movement than the usual, because there's no shelter.
+A really tiny sushi restaurant. You order and pay at the same time. Then they handle your paid order to the sushi chefs 
+through a standard restaurant order system. Due to obvious regulations you have a limit of 35 people inside the building. 
+If it's raining they have way less movement than the usual, because there's no shelter.
 
 ## Problem: 
 
-After you pay the cashier who took your order, the cashier hand the "comanda" over to the waiter. The waiter puts it in the "Porta-comandas". From there the sushi maker takes the "comanda" in order of arrival and makes the sushi. When it's done, the sushi maker will put it on the balcony and rings a bell. There will be no computerized system, all of it just with paper.
+After you pay the cashier who took your order, the cashier hand the "comanda" over to the waiter. The waiter puts it in 
+the "Porta-comandas". From there the sushi maker takes the "comanda" in order of arrival and makes the sushi. When it's done, 
+the sushi maker will put it on the balcony and rings a bell. There will be no computerized system, all of it just with paper.
 
 
 ## Resolution
@@ -41,10 +45,24 @@ After you pay the cashier who took your order, the cashier hand the "comanda" ov
 1. Puts on the balcony
 1. Rings a bell
 
+##### Take the order action:
+
+* take order of 1 item
+
+##### Payment action:
+o cliente pede uma coisa do menu, indo no caixa
+o caixa verifica qual o preço do item pedido
+qual a forma de pagamento do cliente
+cliente escolhe dinheiro ou cheque
+o caixa recebe o pagamento
+o caixa preenche o pedido
+
 #### Process?
 
 
 ## Notas
+
+20/12/2019:
 
 1. I noticed that order and comanda it's not the same thing - Book?
 1. In a real project what we should be prioritize firts? - Book?
@@ -57,3 +75,27 @@ After you pay the cashier who took your order, the cashier hand the "comanda" ov
 1. Specification by example - [https://www.amazon.com.br/Specification-Example-Successful-Deliver-Software/dp/1617290084/ref=cm_wl_huc_item] 
 1. DDD [https://dzone.com/articles/ddd-part-i-introduction] / [https://dddcommunity.org/]
 
+3/1/2020:
+
+1. tipos de pareamento (driver/navigator)
+1. escolas de teste unitário, quais existem? porque?
+1. multiplos asserts no mesmo teste
+1. TODO: definir um fluxo inteiro para testar (happy path) pensando em código. Sugestão, usar um fluxograma ou um diagrama de sequência:
+
+
+"Simples": 
+cliente chega no restaurante vai no balcão e pega o menu
+cliente escolhe item do menu
+cliente vai até o caixa e faz o pedido desse item
+cliente paga com dinheiro pro caixa
+cliente espera chamar pelo numero da invoice
+cozinha prepara o pedido e avisa que o numero da invoice tá feito
+cliente pega o pedido no balcão pronto 
+cliente come
+
+"Mais simples mas nem tanto":
+
+Lucas pede hot roll no balcão do restaurante
+Lucas paga com dinheiro e recebe a invoice numero 2
+Restaurante prepara o pedido do Lucas e grita o numero quando tá pronto
+Lucas pega o prato e come
