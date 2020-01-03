@@ -5,15 +5,15 @@ import java.util.Iterator;
 
 public class Order implements Iterable<MenuThings>{
 
-    private ArrayList<Object> listaDeCoisasNoPedido;
+    private ArrayList<Object> orderList;
 
     public Order(MenuThings menuThings) {
-        listaDeCoisasNoPedido = new ArrayList<>();
-        listaDeCoisasNoPedido.add(menuThings);
+        orderList = new ArrayList<>();
+        orderList.add(menuThings);
     }
 
     @Override
     public Iterator iterator() {
-        return listaDeCoisasNoPedido.iterator();
+        return orderList.iterator();
     }
 }
