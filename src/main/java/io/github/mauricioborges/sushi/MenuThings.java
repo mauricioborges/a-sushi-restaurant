@@ -1,4 +1,4 @@
 package io.github.mauricioborges.sushi;
 
-public class CoisaDoCardapio {
+public class MenuThings {
 }

@@ -3,13 +3,13 @@ package io.github.mauricioborges.sushi;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Pedido implements Iterable<CoisaDoCardapio>{
+public class Order implements Iterable<MenuThings>{
 
     private ArrayList<Object> listaDeCoisasNoPedido;
 
-    public Pedido(CoisaDoCardapio umaCoisaDoCardapio) {
+    public Order(MenuThings menuThings) {
         listaDeCoisasNoPedido = new ArrayList<>();
-        listaDeCoisasNoPedido.add(umaCoisaDoCardapio);
+        listaDeCoisasNoPedido.add(menuThings);
     }
 
     @Override

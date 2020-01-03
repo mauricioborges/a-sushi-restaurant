@@ -10,48 +10,49 @@ A really tiny sushi restaurant. You order and pay at the same time. Then they ha
 
 ## Problem: 
 
-Depois que tu paga a pessoa do caixa que tirou teu pedido entrega a comanda para o garçom e ele coloca a comanda no porta comandas. A partir daí a pessoa que faz o sushi pega os pedidos em ordem de chegada e faz o sushi. Depois de pronto, coloca no balcão e toca uma campainha. Não existirá sistema informatizado, tudo com papel.
+After you pay the cashier who took your order, the cashier hand the "comanda" over to the waiter. The waiter puts it in the "Porta-comandas". From there the sushi maker takes the "comanda" in order of arrival and makes the sushi. When it's done, the sushi maker will put it on the balcony and rings a bell. There will be no computerized system, all of it just with paper.
+
 
 ## Resolution
 
-Pessoas:
-1. Caixa
-2. Garçom
-3. Pessoa que faz sushi
-4. Cliente
+#### People:
+1. Cashier
+2. Waiter
+3. Sushi maker
+4. Client
 
-Coisas:
-1. Pedido
-2. Pagamento
+#### Stuff:
+1. Order
+2. Payment
 3. Porta comanda
-4. Balcão
+4. Balcony
 1. Comanda
 1. Sushi
 
-Ações:
-1. Fazer o pedido
-1. Tirar o pedido
-1. Fazer pagamento
-1. Preencher a comanda
-1. Entregar a comanda 
-1. Colocar a comanda no porta comandas
-1. Pegar as comandas na ordem de chegada
-1. Fazer o sushi
-1. Colocar no balcão
-1. Tocar camapainha
+#### Actions:
+1. Make the order
+1. Take the order
+1. Payment
+1. Fulfill the comanda
+1. Hand over the comanda 
+1. Put the comanda on porta comandas
+1. Takes the comanda in the order arrival
+1. Makes Sushi
+1. Puts on the balcony
+1. Rings a bell
 
-Processos?
+#### Process?
 
 
 ## Notas
 
-1. Observei que pedido e comanda não são a mesma coisa. Livro?
-1. Num projeto teríamos que priorizar primeiro. Livro?
-1. Interfaces são contratos.
-1. Uso de Generics in Java. - [https://www.baeldung.com/java-generics]
-1. Iterator - o que é? [https://www.geeksforgeeks.org/iterators-in-java/]
-1. Instalar o KeyPromoterX - DONE
-1. Tipos Primitivos em Java - [https://www.javatpoint.com/java-data-types]
+1. I noticed that order and comanda it's not the same thing - Book?
+1. In a real project what we should be prioritize firts? - Book?
+1. Interfaces are contracts.
+1. Generics in Java. - [https://www.baeldung.com/java-generics]
+1. Iterator - What is this? [https://www.geeksforgeeks.org/iterators-in-java/]
+1. Install KeyPromoterX on InteliJ - DONE
+1. Primitive Types on Java - [https://www.javatpoint.com/java-data-types]
 1. BDD vs TDD - [https://www.softwaretestinghelp.com/tdd-vs-bdd/]
 1. Specification by example - [https://www.amazon.com.br/Specification-Example-Successful-Deliver-Software/dp/1617290084/ref=cm_wl_huc_item] 
 1. DDD [https://dzone.com/articles/ddd-part-i-introduction] / [https://dddcommunity.org/]

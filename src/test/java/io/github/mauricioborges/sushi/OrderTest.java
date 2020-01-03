@@ -4,30 +4,30 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
-import static org.junit.jupiter.api.Assertions.fail;
 
-public class PedidoTest {
+public class OrderTest {
 
     @Test
-    void tirarPedidoDeUmItemNoCaixaDoRestaurante() {
+    void takeOrderOfOneItemAtRestaurantCasher() {
     // GIVEN
-        Restaurante restaurante = new Restaurante();
-        CoisaDoCardapio umaCoisaDoCardapio = new CoisaDoCardapio();
-        Caixa caixa = restaurante.getCaixa();
+        Restaurant restaurant = new Restaurant();
+        MenuThings menuThing = new MenuThings();
+        Cashier cashier = restaurant.getCashier();
     // WHEN
-        Pedido pedido = caixa.tiraOPedido(umaCoisaDoCardapio);
+        Order order = cashier.takeOrder(menuThing);
     // THEN
-        assertThat(pedido, contains(umaCoisaDoCardapio));
+        assertThat(order, contains(menuThing));
     }
 
     @Test
-    void fazerPedido() {
-        fail();
+    void makeOrder() {
+//        fail();
+
 //        Cliente cliente;
-        Restaurante restaurante;
+        Restaurant restaurant;
 
 //        cliente.entra(restaurante);
-        CoisaDoCardapio umaCoisaDoCardapio;
+        MenuThings umaMenuThings;
 
 //        cliente.fazPedido(umaCoisaDoCardapio);
 //        Caixa caixa = restaurante.getCaixa();
