@@ -45,14 +45,14 @@ Processos?
 
 ## Notas
 
-Observei que pedido e comanda não são a mesma coisa. Livro?
-Num projeto teríamos que priorizar primeiro. Livro?
-Interfaces são contratos.
-Uso de Generics in Java.
-Iterator - o que é?
-Instalar o KeyPromoterX
-Tipos Primitivos em Java
-BDD vs TDD
-Specification by example
-DDD
+1. Observei que pedido e comanda não são a mesma coisa. Livro?
+1. Num projeto teríamos que priorizar primeiro. Livro?
+1. Interfaces são contratos.
+1. Uso de Generics in Java. - [https://www.baeldung.com/java-generics]
+1. Iterator - o que é? [https://www.geeksforgeeks.org/iterators-in-java/]
+1. Instalar o KeyPromoterX - DONE
+1. Tipos Primitivos em Java - [https://www.javatpoint.com/java-data-types]
+1. BDD vs TDD - [https://www.softwaretestinghelp.com/tdd-vs-bdd/]
+1. Specification by example - [https://www.amazon.com.br/Specification-Example-Successful-Deliver-Software/dp/1617290084/ref=cm_wl_huc_item] 
+1. DDD [https://dzone.com/articles/ddd-part-i-introduction] / [https://dddcommunity.org/]
 
