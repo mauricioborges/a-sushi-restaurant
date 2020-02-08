@@ -50,10 +50,10 @@ the sushi maker will put it on the balcony and rings a bell. There will be no co
 * take order of 1 item
 
 ##### Payment action:
-o cliente pede uma coisa do menu, indo no caixa
+o client pede uma coisa do menu, indo no caixa
 o caixa verifica qual o preço do item pedido
-qual a forma de pagamento do cliente
-cliente escolhe dinheiro ou cheque
+qual a forma de pagamento do client
+client escolhe dinheiro ou cheque
 o caixa recebe o pagamento
 o caixa preenche o pedido
 
@@ -84,18 +84,18 @@ o caixa preenche o pedido
 
 
 "Simples": 
-cliente chega no restaurante vai no balcão e pega o menu
-cliente escolhe item do menu
-cliente vai até o caixa e faz o pedido desse item
-cliente paga com dinheiro pro caixa
-cliente espera chamar pelo numero da invoice
+client chega no restaurante vai no balcão e pega o menu
+client escolhe item do menu
+client vai até o caixa e faz o pedido desse item
+client paga com dinheiro pro caixa
+client espera chamar pelo numero da invoice
 cozinha prepara o pedido e avisa que o numero da invoice tá feito
-cliente pega o pedido no balcão pronto 
-cliente come
+client pega o pedido no balcão pronto 
+client come
 
 "Mais simples mas nem tanto":
 
-Lucas pede hot roll no balcão do restaurante
-Lucas paga com dinheiro e recebe a invoice numero 2
-Restaurante prepara o pedido do Lucas e grita o numero quando tá pronto
-Lucas pega o prato e come
+Lucas pede hot roll no caixa do restaurante
+Lucas paga com dinheiro e recebe a invoice numero 1
+Restaurante prepara o pedido do Lucas e grita o numero 1 quando o pedido estive pronto
+Lucas vai até o balcão, pega o prato e come

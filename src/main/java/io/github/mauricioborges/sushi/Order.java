@@ -6,8 +6,9 @@ import java.util.Iterator;
 public class Order implements Iterable<MenuThings>{
 
     private ArrayList<Object> orderItensList;
+    private Integer invoiceNumber;
 
-    public Order(MenuThings menuThings) {
+    public Order(MenuThings.Dishes menuThings) {
         orderItensList = new ArrayList<>();
         orderItensList.add(menuThings);
     }
@@ -15,5 +16,13 @@ public class Order implements Iterable<MenuThings>{
     @Override
     public Iterator iterator() {
         return orderItensList.iterator();
+    }
+
+    public Integer getInvoiceNumber() {
+        return invoiceNumber;
+    }
+
+    void setInvoiceNumber(Integer invoiceNumber) {
+        this.invoiceNumber = invoiceNumber;
     }
 }
