@@ -50,11 +50,12 @@ public class OrderTest {
     @Test
     void lucasOrderingAHotRoll() throws InterruptedException {
         // GIVEN
-        Client client =  new Client("Lucas");
+        Client client =  new Client();
+        client.setName("Lucas");
         Restaurant restaurant = new Restaurant();
         Cashier cashier = restaurant.getCashier();
-        Cozinha cozinha = new Cozinha();
-        Balcao balcao = new Balcao();
+        Cozinha cozinha = restaurant.getCozinha();
+        Balcao balcao = restaurant.getBalcao();
         cozinha.setBalcao(balcao);
 
         // WHEN
@@ -69,7 +70,10 @@ public class OrderTest {
         // na lista de pedidos prontos do balcão tem o pedido de Lucas
         assertThat(balcao.getDoneOrderList(), contains(order));
         // o número do pedido é 1
-        assertThat(order.getInvoiceNumber(), equalTo(1) );
+        assertThat(order.getInvoiceNumber(), equalTo(invoiceNumber) );
+        // o pedido é de Lucas
+        assertThat(client.getInvoiceNumber(), equalTo(order.getInvoiceNumber()));
+        assertThat(client.getName(), equalTo("Lucas"));
 
     }
 }
