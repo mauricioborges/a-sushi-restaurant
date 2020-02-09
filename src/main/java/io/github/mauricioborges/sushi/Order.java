@@ -5,11 +5,10 @@ import java.util.Iterator;
 
 public class Order implements Iterable<MenuThings>{
 
-    private ArrayList<Object> orderItensList;
+    private ArrayList<Object> orderItensList = new ArrayList<>();
     private Integer invoiceNumber;
 
     public Order(MenuThings.Dishes menuThings) {
-        orderItensList = new ArrayList<>();
         orderItensList.add(menuThings);
     }
 
@@ -24,5 +23,15 @@ public class Order implements Iterable<MenuThings>{
 
     void setInvoiceNumber(Integer invoiceNumber) {
         this.invoiceNumber = invoiceNumber;
+    }
+
+    public ArrayList<Object> getOrderItens() {
+        return orderItensList;
+    }
+
+    public void printOrderItems() {
+        orderItensList.forEach(orderItensList -> {
+            System.out.println(orderItensList);
+        });
     }
 }

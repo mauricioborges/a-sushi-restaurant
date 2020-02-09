@@ -21,4 +21,8 @@ public class Client {
     public void setInvoiceNumber(Integer invoiceNumber) {
         this.invoiceNumber = invoiceNumber;
     }
+
+    public Boolean getOrderBalcao(Integer invoiceNumber, Balcao balcao) {
+         return balcao.deliverOrderToClient(invoiceNumber);
+    }
 }
