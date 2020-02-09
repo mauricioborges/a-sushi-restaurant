@@ -26,7 +26,7 @@ public class Cozinha {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            balcao.getDoneOrder(order);
+            balcao.receiveDoneOrderFromKitchen(order);
         });
     }
 

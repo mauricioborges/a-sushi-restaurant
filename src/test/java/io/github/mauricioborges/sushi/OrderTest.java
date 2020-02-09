@@ -41,12 +41,6 @@ public class OrderTest {
         //assertThat(pedido).soTemUmItem;
     }
 
-    // Lucas pede hot roll no caixa do restaurante
-    // Lucas paga com dinheiro
-    // e recebe a invoice numero 2
-    // Restaurante prepara o pedido do Lucas
-    // e grita o numero quando tá pronto
-    // Lucas pega o prato e come
     @Test
     void lucasOrderingAHotRoll() throws InterruptedException {
         // GIVEN
@@ -63,12 +57,13 @@ public class OrderTest {
         Order order = cashier.takeOrder(HOTROLL);
         order.setInvoiceNumber(invoiceNumber);
         client.setInvoiceNumber(invoiceNumber);
-        // cozinha recebe Order com itens do pedido
+        // cozinha recebe Order com itens do pedido, prepara e envia para o Balcão
         cozinha.addOrders(order);
-
+        // Balcão recebe a order pronta e chama o número da invoice que acabou de ficar pronta
+        balcao.callDoneOrders();
         // THEN
         // na lista de pedidos prontos do balcão tem o pedido de Lucas
-        assertThat(balcao.getDoneOrderList(), contains(order));
+        assertThat(balcao.getDoneOrdersList(), contains(order));
         // o número do pedido é 1
         assertThat(order.getInvoiceNumber(), equalTo(invoiceNumber) );
         // o pedido é de Lucas

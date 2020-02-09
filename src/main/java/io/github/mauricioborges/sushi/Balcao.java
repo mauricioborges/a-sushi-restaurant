@@ -4,22 +4,27 @@ import java.util.ArrayList;
 
 public class Balcao {
 
-    private ArrayList<Order> doneOrderList = new ArrayList<>();
+    private ArrayList<Order> doneOrdersList = new ArrayList<>();
 
     public void callClientByInvoiceNumber(Integer invoiceNumber) {
         System.out.println("Pedido #" + invoiceNumber + " está pronto");
     }
 
-    public void getDoneOrder(Order order) {
+    public void receiveDoneOrderFromKitchen(Order order) {
         addToDoneOrdersList(order);
-        callClientByInvoiceNumber(order.getInvoiceNumber());
     }
 
     private void addToDoneOrdersList(Order order) {
-        doneOrderList.add(order);
+        doneOrdersList.add(order);
     }
 
-    public ArrayList<Order> getDoneOrderList() {
-        return doneOrderList;
+    public ArrayList<Order> getDoneOrdersList() {
+        return doneOrdersList;
+    }
+
+    public void callDoneOrders() {
+        doneOrdersList.forEach(order -> {
+            callClientByInvoiceNumber(order.getInvoiceNumber());
+        });
     }
 }
