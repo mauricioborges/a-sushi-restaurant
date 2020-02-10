@@ -23,11 +23,6 @@ public class OrderTest {
     private MenuThings.Dishes thingChoosed;
     ArrayList<MenuThings.Dishes> orderItems;
 
-    @BeforeAll
-    public void setup() {
-        // Creating commom elements to be used for all of tests
-        basicRestaurantSetup();
-    }
 
     @Test
     void takeOrderOfOneItemAtRestaurantCashier() throws InterruptedException {
