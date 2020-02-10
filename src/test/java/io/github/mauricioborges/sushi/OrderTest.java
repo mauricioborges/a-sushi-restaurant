@@ -41,6 +41,7 @@ public class OrderTest {
         balcao.callDoneOrders();
     // THEN
         assertThat(balcao.getDoneOrdersList(), contains(order));
+        client.getOrderBalcao(invoiceNumber, balcao);
     }
 
     @Disabled("this is more like a Functional/Integration test and will not pass for now")
@@ -151,6 +152,7 @@ public class OrderTest {
 
         // THEN
         assertThat(balcao.getDoneOrdersList(), contains(order));
+        client.getOrderBalcao(invoiceNumber, balcao);
 
     }
 
