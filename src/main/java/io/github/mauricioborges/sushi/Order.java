@@ -5,11 +5,11 @@ import java.util.Iterator;
 
 public class Order implements Iterable<MenuThings>{
 
-    private ArrayList<Object> orderItensList = new ArrayList<>();
+    ArrayList<MenuThings.Dishes> orderItensList = new ArrayList<>();
     private Integer invoiceNumber;
 
-    public Order(MenuThings.Dishes menuThings) {
-        orderItensList.add(menuThings);
+    public Order(ArrayList<MenuThings.Dishes> menuThingsList) {
+        this.orderItensList = menuThingsList;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class Order implements Iterable<MenuThings>{
         this.invoiceNumber = invoiceNumber;
     }
 
-    public ArrayList<Object> getOrderItens() {
+    public ArrayList<MenuThings.Dishes> getOrderItens() {
         return orderItensList;
     }
 

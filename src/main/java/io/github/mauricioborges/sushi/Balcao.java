@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Balcao {
 
-    private ArrayList<Order> doneOrdersList = new ArrayList<>();
+    ArrayList<Order> doneOrdersList = new ArrayList<>();
     public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
     public static final String ANSI_RESET = "\u001B[0m";
 

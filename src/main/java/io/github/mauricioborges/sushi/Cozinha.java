@@ -6,7 +6,8 @@ import java.util.concurrent.TimeUnit;
 public class Cozinha {
 
     // lista de pedidos a serem preparados
-    private ArrayList<Order> orderListToPrepare = new ArrayList<>();
+//    @Todo orderListToPrepare could be an Queue
+    ArrayList<Order> orderListToPrepare = new ArrayList<>();
     private Balcao balcao;
 
     public Order addOrders(Order order) throws InterruptedException {
@@ -29,7 +30,6 @@ public class Cozinha {
             balcao.receiveDoneOrderFromKitchen(order);
         });
     }
-
 
     public void setBalcao(Balcao balcao) {
         this.balcao = balcao;

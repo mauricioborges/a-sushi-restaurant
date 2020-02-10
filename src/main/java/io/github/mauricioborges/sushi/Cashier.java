@@ -1,13 +1,13 @@
 package io.github.mauricioborges.sushi;
 
+import java.util.ArrayList;
+
 public class Cashier {
     private Integer money = 0;
 
-    //@TODO Receber mais de um item por pedido
-    public Order takeOrder(MenuThings.Dishes menuThing) {
+    public Order takeOrder(ArrayList<MenuThings.Dishes> menuThing) {
         return new Order(menuThing);
     }
-
 
     public Integer receiveCash(Integer cash) {
         setMoney(cash);
